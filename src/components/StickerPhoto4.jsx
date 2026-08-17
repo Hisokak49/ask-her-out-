@@ -54,11 +54,12 @@ export default function StickerPhoto4() {
           alt="sticker"
           draggable={false}
           style={{
-            width: 90,
-            height: 90,
+            width: 100,
+            height: 100,
             objectFit: 'cover',
-            objectPosition: 'center top',
+            objectPosition: 'center 65%',
             borderRadius: 10,
+            background: '#ffffff',
             display: 'block',
             pointerEvents: 'none',
           }}
