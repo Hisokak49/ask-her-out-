@@ -1,25 +1,21 @@
-import { useEffect } from 'react';
 import confetti from 'canvas-confetti';
 
 export default function useConfetti() {
   function burst() {
     confetti({
-      particleCount: 200,
-      spread: 90,
-      origin: { x: 0.5, y: 0.55 },
-      colors: ['#ff6b9d','#ffd700','#ff8fb1','#e91e8c','#c9184a','#fff','#48c78e'],
-      startVelocity: 40,
-      gravity: 0.85,
-      ticks: 220,
-      scalar: 1.1,
+      particleCount: 160,
+      spread: 80,
+      origin: { x: 0.5, y: 0.6 },
+      colors: ['#f2c4b8','#e8a0a0','#fff','#fde8dc','#c0534a','#f5ede0'],
+      startVelocity: 38,
+      gravity: 0.9,
+      ticks: 200,
+      scalar: 1.05,
     });
-
-    // Side cannons
     setTimeout(() => {
-      confetti({ particleCount: 80, angle: 60,  spread: 55, origin: { x: 0, y: 0.65 }, colors: ['#ff6b9d','#ffd700','#fff'] });
-      confetti({ particleCount: 80, angle: 120, spread: 55, origin: { x: 1, y: 0.65 }, colors: ['#ff6b9d','#e91e8c','#ffd700'] });
-    }, 220);
+      confetti({ particleCount: 60, angle: 60,  spread: 50, origin: { x: 0, y: 0.7 }, colors: ['#f2c4b8','#fff','#e8a0a0'] });
+      confetti({ particleCount: 60, angle: 120, spread: 50, origin: { x: 1, y: 0.7 }, colors: ['#f2c4b8','#fde8dc','#c0534a'] });
+    }, 200);
   }
-
   return burst;
 }

@@ -1,41 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --rose:    #ff6b9d;
-  --pink:    #ff8fb1;
-  --deep:    #c9184a;
-  --magenta: #e91e8c;
-  --purple:  #7b2d8b;
-  --dark:    #1a0a2e;
-  --darker:  #0d0618;
-  --gold:    #ffd700;
-  --glass:   rgba(255, 255, 255, 0.06);
-  --glass-border: rgba(255, 255, 255, 0.12);
+  --cream:  #faf6f0;
+  --warm:   #f5ede0;
+  --rose:   #e8a0a0;
+  --deep-rose: #c0534a;
+  --blush:  #f2c4b8;
+  --brown:  #3d2b1f;
+  --light-brown: #7a5c4a;
+  --black:  #1a1108;
+  --white:  #ffffff;
+  --green:  #4a7c59;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Outfit', sans-serif;
-  background: var(--darker);
-  color: #fff;
+  font-family: 'Space Grotesk', sans-serif;
+  background: var(--cream);
+  color: var(--black);
   min-height: 100vh;
   overflow-x: hidden;
 }
 
-#root {
-  min-height: 100vh;
-}
+#root { min-height: 100vh; }
 
 /* Scrollbar */
-::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgba(255,107,157,0.4); border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: var(--rose); border-radius: 2px; }

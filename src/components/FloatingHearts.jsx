@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-const HEARTS = ['❤️','💕','💖','💗','💓','🌹','✨','💝','🥰','💞','🌸','🦋'];
+const HEARTS = ['🌸','💌','🌹','💕','✨','🌷','💝','🫶','🌼','🩷'];
 
 export default function FloatingHearts() {
   const layerRef = useRef(null);
@@ -14,18 +14,15 @@ export default function FloatingHearts() {
       el.className = 'fheart';
       el.textContent = HEARTS[Math.floor(Math.random() * HEARTS.length)];
       el.style.left = `${Math.random() * 100}vw`;
-      el.style.fontSize = `${Math.random() * 20 + 10}px`;
-      const dur = Math.random() * 6 + 7;
+      el.style.fontSize = `${Math.random() * 16 + 10}px`;
+      const dur = Math.random() * 7 + 8;
       el.style.animationDuration = `${dur}s`;
-      el.style.animationDelay = '0s';
       layer.appendChild(el);
       setTimeout(() => el.remove(), dur * 1000 + 500);
     }
 
-    // Initial burst
-    for (let i = 0; i < 6; i++) setTimeout(spawn, i * 180);
-
-    const iv = setInterval(spawn, 950);
+    for (let i = 0; i < 5; i++) setTimeout(spawn, i * 220);
+    const iv = setInterval(spawn, 1100);
     return () => clearInterval(iv);
   }, []);
 
