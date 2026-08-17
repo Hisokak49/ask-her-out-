@@ -115,9 +115,8 @@ export default function AskPage({ onYes }) {
             }}
             transition={{ type: 'spring', stiffness: 400, damping: 20 }}
             style={{
-              opacity: Math.max(0.8 - noCount * 0.08, 0.35),
               cursor: 'pointer',
-              pointerEvents: 'auto', // interactive dodge!
+              pointerEvents: 'auto',
             }}
           >
             no 😔
