@@ -5,6 +5,7 @@ import './App.css';
 
 import PhotoBackground from './components/ParticleBackground';
 import FloatingHearts  from './components/FloatingHearts';
+import StickerPhoto4   from './components/StickerPhoto4';
 import useConfetti     from './components/useConfetti';
 import AskPage         from './pages/AskPage';
 import CalendarPage    from './pages/CalendarPage';
@@ -35,6 +36,7 @@ export default function App() {
     <>
       <PhotoBackground />
       <FloatingHearts />
+      <StickerPhoto4 />
 
       <AnimatePresence mode="wait">
         {screen === SCREEN.ASK && (
